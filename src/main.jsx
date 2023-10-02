@@ -7,6 +7,8 @@ import './index.css'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contacto from './pages/Contacto'
+import Login from './pages/Login'
+import Register from './pages/Register'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contacto />
+  },
+  {
+    path: "/login",
+    element: <Login />
+  },
+  {
+    path: "/register",
+    element: <Register />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
